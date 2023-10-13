@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+
+:root {
+/* ### Primary */
+
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--Paleblue);
+    padding: 20% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#images {
+    width: 100%;
+}
+
+#hero {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+#orderSummary {
+    padding: 5% 5% 10% 5%;
+}
+
+h1 {
+    color: var(--Darkblue);
+    font-weight: 900;
+}
+
+p {
+    color: var(--Desaturatedblue);
+    margin-top: 5%;
+}
+
+#annualPlan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Verypaleblue);
+    padding: 4%;
+    margin: 10% 0;
+    border-radius: 1em;
+}
+
+h2 {
+    font-size: .8rem;
+    color: var(--Desaturatedblue);
+}
+
+h2 span {
+    color: var(--Darkblue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+
+
+#change {
+    font-weight: 700;
+}
+
+button  {
+    width: 100%;
+    font-size: .8rem;
+    background-color: var(--Brightblue);
+    padding: 5%;
+    margin-bottom: 5%;
+    border: none;
+    color: var(--Verypaleblue);
+    font-weight: 700;
+    border-radius: .8em;
+    box-shadow: 0 10px 60px -10px var(--Desaturatedblue);
+}
+
+#cancelOrder {
+    font-weight: 900;
+    color: var(--Desaturatedblue);
+    text-decoration: none;
+    font-size: 1rem;
+    padding-bottom: 10%;
+}
+
+@media screen and (min-width: 500px){
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    main {
+        width: 60%;
+      
+    }
+
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+       
+    }
+
+    main {
+        width: 40%;
+    }
+
+    html {
+        font-size: 16px;
+    }
+}
