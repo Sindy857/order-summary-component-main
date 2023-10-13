@@ -51,6 +51,7 @@ main {
 
 #orderSummary {
     padding: 5% 5% 10% 5%;
+    max-width: 375px;
 }
 
 h1 {
@@ -122,8 +123,12 @@ button  {
       
     }
 
+    #orderSummary {
+        max-width: 500px;
+    }
+
     html {
-        font-size: 16px;
+        font-size: 17px;
     }
 }
 
@@ -139,5 +144,47 @@ button  {
 
     html {
         font-size: 16px;
+    }
+
+    #orderSummary {
+        max-width: 800px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+       
+    }
+
+    main {
+        width: 40%;
+    }
+
+    html {
+        font-size: 19px;
+    }
+
+    #orderSummary {
+        max-width: 1100px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+       
+    }
+
+    main {
+        width: 30%;
+    }
+
+    html {
+        font-size: 21px;
+    }
+
+    #orderSummary {
+        max-width: 1100px;
     }
 }
